@@ -1,0 +1,45 @@
+{
+  "name": "vk-ma-wallpapers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env PORT=10889 react-scripts start",
+    "build": "react-scripts build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "cross-env": "^5.2.1",
+    "react-hot-loader": "^4.12.18",
+    "react-scripts": "^3.2.0"
+  },
+  "dependencies": {
+    "@vkontakte/icons": "^1.11.3",
+    "@vkontakte/vk-connect": "^1.6.9",
+    "@vkontakte/vkui": "^2.33.2",
+    "babel-eslint": "^10.0.3",
+    "chalk": "^2.4.2",
+    "core-js": "^3.4.1",
+    "node-vibrant": "^3.1.5",
+    "prop-types": "^15.7.2",
+    "react": "^16.12.0",
+    "react-bottom-scroll-listener": "^3.0.0",
+    "react-dom": "^16.12.0",
+    "react-media-hook": "^0.4.4",
+    "unsplash-js": "^6.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

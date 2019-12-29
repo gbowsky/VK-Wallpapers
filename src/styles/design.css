@@ -1,0 +1,157 @@
+
+
+    body {
+        --header_background: rgba(0,0,0,0);
+        --background_page: #efefef;
+        --background_content: #efefef;
+        --text_primary: #333;
+        --header_tint: var(--text_primary);
+        --text_secondary: rgba(51, 51, 51, 0.70);
+        --accent: var(--text_primary);
+        --button_tertiary_foreground: var(--text_primary);
+        --header_tint_alternate: var(--text_primary);
+        --bighead_text: #666;
+        --panelheader_height_ios: 78px;
+        --panelheader_height_android: 78px;
+        --button_primary_background: var(--text_primary);
+        --segmented_control_tint: var(--text_primary);
+        font-family: "Roboto" !important;
+    }
+
+
+
+
+.ModalPage__in {
+    background: #efefef;
+}
+
+.headermodal {
+    color: var(--text_primary);
+    padding-top: 0px;
+    padding-left: 12px;
+    padding-bottom: 2px;
+    font-size: 24px;
+    font-weight: bolder;
+}
+
+.PanelHeader__left {
+    height: var(--panelheader_height_android);
+}
+
+
+.PanelHeader {
+    background: #efefef;
+}
+
+@supports (backdrop-filter: blur(10px)) {
+    .PanelHeader, .ModalPage__in {
+        backdrop-filter: blur(16px) saturate(3);
+        background: url("/public/noisy-texture-200x200-o3-d10-c-000000-t1.png") rgba(239, 239, 239, 0.6);
+    }
+    .ModalPage__in {
+        color: black
+    }
+    .FixedLayout--bottom .Tabs {
+        backdrop-filter: blur(16px) saturate(2) contrast(1.2);
+        background: url("/public/noisy-texture-200x200-o3-d10-c-000000-t1.png") rgba(239, 239, 239, 0.8)!important;
+    }
+
+}
+@media (prefers-color-scheme: dark) {
+    .PanelHeader, .ModalPage__in {
+        backdrop-filter: blur(16px) saturate(2) contrast(1.2);
+        background: url("/public/noisy-texture-200x200-o3-d10-c-000000-t1.png") rgba(45, 45, 45, 0.8);
+    }
+    .ModalPage__in {
+        color: white;
+    }
+    .show_to_top {
+        color: black!important;
+    }
+    .FixedLayout--bottom .Tabs {
+        backdrop-filter: blur(16px) saturate(2) contrast(1.2);
+        background: url("/public/noisy-texture-200x200-o3-d10-c-000000-t1.png") rgba(45, 45, 45, 0.8)!important;
+    }
+
+    .Tabs--android.Tabs--light .TabsItem--selected {
+        color: #eee!important;
+    }
+    .Tabs--android.Tabs--light .TabsItem--selected::after {
+        background-color: #eee!important;
+    }
+    .Icon--search_24, .Icon--back_24, .Icon--dropdown_24 {
+        color: #eee!important;
+    }
+    .header_b {
+        color: #eeeeee!important;
+    }
+    .Button--lvl-tertiary {
+        color: #eee!important;
+    }
+    .Button--lvl-primary {
+        background: #eee!important;
+        color: #222!important;
+    }
+}
+
+    .FixedLayout--ios.FixedLayout--bottom .Tabs::after {
+        background-color: rgba(0,0,0,0)!important;
+    }
+.PanelHeader-left-in--brand, .PanelHeader-content, .PanelHeader-content--brand, .PanelHeader-addon--brand, .PanelHeader-right--brand, .PanelHeader-bg--brand, .PanelHeader-left-in--brand, .PanelHeader-addon--brand, .PanelHeader-right--brand {
+    background: none;
+}
+
+.PanelHeader-left-in {
+    display: flex;
+    height: var(--panelheader_height_android);
+}
+
+
+
+.info_block {
+    padding: 0px 16px;
+}
+
+.Button {
+    border-radius: 12px;
+}
+
+.header_button {
+    padding:0px;
+
+}
+.header_button_in {
+    display:flex;
+}
+.header_button_text {
+    align-self: center;
+    padding-left: 8px;
+}
+
+.Icon {
+    color: var(--accent);
+}
+
+.Button--lvl-tertiary {
+    color: #333;
+}
+.Button--lvl-primary {
+    background: #333333;
+}
+
+    .Tabs--android.Tabs--light .TabsItem--selected {
+        color: #222;
+    }
+    .Tabs--android.Tabs--light .TabsItem--selected::after {
+        background-color: #222;
+    }
+
+    .Icon--search_24, .Icon--back_24, .Icon--dropdown_24 {
+        color: #222;
+    }
+    .ModalPage__in {
+        border-radius: 0!important;
+    }
+    .header_b {
+        color: #222;
+    }

@@ -1,0 +1,134 @@
+body {
+    --background_page: var(--background_content);
+}
+
+.img_obj {
+    margin: 10px 14px;
+    height: 250px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header {
+    padding: 0px 12px;
+    height: auto;
+    align-self: flex-end;
+}
+.header_s {
+    text-transform: uppercase;
+    color: var(--text_secondary);
+}
+
+.header_b {
+    font-size: 28px;
+    font-weight: bold;
+    padding-bottom: 4px;
+    height: auto;
+    text-transform: capitalize;
+}
+
+.mini_modal_header {
+    padding: 8px 12px 4px 12px;
+    color: var(--text_secondary);
+    font-size: 14px;
+}
+.mini_modal_content {
+    padding: 4px 16px;
+}
+.search_img_obj {
+    width: 100%;
+    border-radius: 16px;
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+    margin-top: 8px;
+}
+
+.show_to_top {
+    color: var(--white)!important;
+    transform:rotateZ(180deg);
+
+}
+
+.profile_name {
+    font-weight: bolder;
+    margin-top: 8px;
+}
+
+.main_list_img {
+    border-radius: 12px;
+}
+
+.content_page {
+    max-width: 500px;
+    margin: 0px auto;
+}
+.content_page_list {
+    padding-bottom: 64px;
+}
+.main_img {
+    border-radius: 0px;
+    background: var(--background_content);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.2);
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_img_obj{
+    margin: 0 auto;
+    width: auto;
+    max-height: 400px;
+    max-width: 100%;
+}
+.main_img_container {
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-width: 300px;
+
+    margin: 4px auto;
+    width: auto;
+}
+
+
+.main_img_info_block {
+    padding: 8px;
+}
+
+.main_img_author_pre {
+    display: flex;
+    vertical-align: center;
+}
+.main_img_data {
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main_img_user {
+
+}
+.main_img_desc {
+    color: var(--text_secondary);
+}
+.main_img_likes {
+    display: flex;
+    padding: 8px;
+    color: var(--text_secondary);
+}
+.main_img_likes_icon {
+    color: var(--text_secondary)!important;
+}
+.main_img_likes_count {
+    margin-left: 4px;
+    margin-top: 2px;
+}
+.palette {
+    display: flex;
+}
+.palette_preview {
+    font-size: 14px;
+    margin: 0px auto;
+    padding: 4px 8px;
+}

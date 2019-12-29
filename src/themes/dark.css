@@ -1,0 +1,32 @@
+.PanelHeader, .ModalPage__in {
+    backdrop-filter: blur(16px) saturate(2) contrast(1.2);
+    background: url("/public/noisy-texture-200x200-o3-d10-c-000000-t1.png") rgba(45, 45, 45, 0.8);
+}
+.ModalPage__in {
+    color: white;
+}
+.show_to_top {
+    color: black!important;
+}
+.FixedLayout--bottom .Tabs {
+    backdrop-filter: blur(16px) saturate(2) contrast(1.2);
+    background: url("/public/noisy-texture-200x200-o3-d10-c-000000-t1.png") rgba(45, 45, 45, 0.8)!important;
+}
+.Tabs--android.Tabs--light .TabsItem--selected {
+    color: #eee;
+}
+.Tabs--android.Tabs--light .TabsItem--selected::after {
+    background-color: #eee;
+}
+.Icon--search_24, .Icon--back_24, .Icon--dropdown_24 {
+    color: white;
+}
+.header_b {
+    color: #eeeeee!important;
+}
+.Button--lvl-tertiary {
+    color: #eee;
+}
+.Button--lvl-primary {
+    background: #eee;
+}
