@@ -25,18 +25,35 @@ class App extends React.Component {
 			VK: true,
 			query: "",
 			palette: [],
+			ignoreTheme: false,
 		};
+	}
+
+	changeTheme = () => {
+		this.setState({ignoreTheme:true});
+		if (this.state.theme == "space_gray") {
+			this.setState({theme:"client_light"});
+			window.location.reload();
+		}
+		else {
+			this.setState({theme:"space_gray"});
+			require("./themes/dark.css");
+		}
 	}
 
 	componentDidMount() {
 		setInterval(()=>{
-			let mql = window.matchMedia('(prefers-color-scheme: dark)');
-			if (mql.matches == true) {
-				this.setState({theme:"space_gray"});
+				if (this.state.ignoreTheme !== true) {
+					let mql = window.matchMedia('(prefers-color-scheme: dark)');
+					if (mql.matches == true) {
+						this.setState({theme:"space_gray"});
+					}
+					else {
+						this.setState({theme:"client_light"});
+					}
+				}
 			}
-			else {
-				this.setState({theme:"client_light"});
-			}},100);
+			,100);
 
 		connect.subscribe((e) => {
 			switch (e.detail.type) {
@@ -263,6 +280,7 @@ class App extends React.Component {
 						  setModalTitle={this.setModalTitle}
 						  activatePopout={this.Popout}
 						  getPhotoData={this.getPhotoData}
+						  changeTheme={this.changeTheme}
 						  isVK={this.state.VK}
 						  id="home"
 						  search={this.CallSearch}

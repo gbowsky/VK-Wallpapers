@@ -1,25 +1,27 @@
 
 
-    body {
-        --header_background: rgba(0,0,0,0);
-        --background_page: #efefef;
-        --background_content: #efefef;
-        --text_primary: #333;
-        --header_tint: var(--text_primary);
-        --text_secondary: rgba(51, 51, 51, 0.70);
-        --accent: var(--text_primary);
-        --button_tertiary_foreground: var(--text_primary);
-        --header_tint_alternate: var(--text_primary);
-        --bighead_text: #666;
-        --panelheader_height_ios: 78px;
-        --panelheader_height_android: 78px;
-        --button_primary_background: var(--text_primary);
-        --segmented_control_tint: var(--text_primary);
-        font-family: "Roboto" !important;
-    }
+body {
+    --header_background: rgba(0,0,0,0);
+    --background_page: #efefef;
+    --background_content: #efefef;
+    --text_primary: #333;
+    --header_tint: var(--text_primary);
+    --text_secondary: rgba(51, 51, 51, 0.70);
+    --accent: var(--text_primary);
+    --button_tertiary_foreground: var(--text_primary);
+    --header_tint_alternate: var(--text_primary);
+    --bighead_text: #666;
+    --panelheader_height_ios: 78px;
+    --panelheader_height_android: 78px;
+    --button_primary_background: var(--text_primary);
+    --segmented_control_tint: var(--text_primary);
+    font-family: "Roboto" !important;
+}
 
 
-
+.bph_flex {
+    display: flex;
+}
 
 .ModalPage__in {
     background: #efefef;

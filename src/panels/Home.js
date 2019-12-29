@@ -7,6 +7,7 @@ import "../styles/objects.css";
 import "../styles/design.css";
 import BigPanelHeader from "../components/BigPanelHeader";
 import Icon24Search from '@vkontakte/icons/dist/24/search';
+import Icon24Flash from '@vkontakte/icons/dist/24/flash';
 import HeaderButtonBPH from "../components/HeaderButtonBPH";
 import Icon20LikeOutline from '@vkontakte/icons/dist/20/like_outline';
 import BottomScrollListener from 'react-bottom-scroll-listener';
@@ -94,11 +95,18 @@ class Home extends React.Component {
 					noShadow
 					left={<BigPanelHeader
 						upper={
-							<HeaderButtonBPH
+							<div className="bph_flex">
+								<HeaderButtonBPH
+									props={this.props}
+									callBack={()=>{this.props.go("search")}}>
+										<Icon24Search/>
+								</HeaderButtonBPH>
+								<HeaderButtonBPH
 								props={this.props}
-								callBack={()=>{this.props.go("search")}}>
-								<Icon24Search/>
-							</HeaderButtonBPH>
+								callBack={()=>{this.props.changeTheme()}}>
+									<Icon24Flash/>
+								</HeaderButtonBPH>
+							</div>
 						}
 						title="wallpapers"/>}
 				>
